@@ -1,0 +1,484 @@
+/*======================
+        Dark Theme
+=======================*/
+
+body,
+input {
+    color: #fdfdfd; /* admonition code block spoiler name uses this color for example.. */
+}
+
+.md-typeset blockquote {
+    color: #e9e9e9; /* most of the text color */
+}
+
+#back-to-top {
+    background-color: #0b0b0b; /* Back to top button background color */
+}
+
+.md-typeset h1 {
+    color: #ffffff; /* header 1 */
+}
+
+.md-typeset h2 {
+    color: #ffffff; /* header 2 */
+}
+
+.md-typeset h2:after {
+    content: " ";
+    display: block;
+    border-bottom: 0.08rem solid #5a85fc54; } /* line underneath header 2 */
+
+.md-typeset h3 {
+    color: #fdfdfd; /* header 3 */
+}
+
+.md-typeset h4 {
+    color: #fdfdfd; /* header 4 */
+}
+
+.md-typeset h5 {
+    color: #fdfdfd; /* header 4 */
+}
+
+.md-typeset a {
+    color: #e9e9e9; /* hyperlink color, I don't think this is used anywhere */
+}
+
+.md-typeset table:not([class]) th {
+    min-width: 10rem;
+    padding: 1.2rem 1.6rem;
+    border: rgb(110, 110, 110) 0.1px solid;
+    background: -moz-linear-gradient(top, #02005a 0%, #3f4c6b 100%);
+    background: -webkit-linear-gradient(top, #02005a 0%,#3f4c6b 100%);
+    background: linear-gradient(to bottom, #02005a 0%,#3f4c6b 100%);
+    color: #f9fdff;
+    -webkit-text-stroke: 0.1px black;
+    text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,                    /* Everything related to tables */
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    vertical-align: middle; 
+}
+
+  .md-typeset table:not([class]) td {
+    padding: 1.2rem 1.6rem;
+    border: 0.1rem dotted rgba(255, 255, 255, 0.07);
+    background-color: rgba(36, 36, 36, 0.904);
+    color: #a7befdbe;
+    vertical-align: middle; 
+}
+
+.md-main {
+    background-color: rgb(31, 31, 31); /* background color on the site */
+    overflow: auto; }
+
+#switcher {
+    border-radius: 25px;
+    border: 2px solid rgb(255, 255, 255); /* Theme Switcher */
+    background-color: #3a3a5d;
+}
+
+.md-typeset code,
+.md-typeset pre {
+    background-color: rgba(236, 236, 236, 0.25); /* Code block background color */
+    color: #f5f5f5;                    /* Code block font color */
+}
+
+.md-typeset code {
+    box-shadow: 0.29412em 0 0 rgba(236, 236, 236, 0.25), -0.29412em 0 0 rgba(236, 236, 236, 0.25); /* this sets the border color around the little code block. */
+}
+
+.md-typeset blockquote {
+    border-left: 0.4rem solid rgb(100, 100, 100); /* this sets the color of the quote blocks before the quote itself (in markdown ">") */
+}
+
+.md-footer-meta {
+  background-color: #111; /* Footer color */
+}
+
+.md-nav {
+    color: #fff; /* navigation sidebar list of items color */
+}
+
+.md-nav__link[data-md-state="blur"] {
+    color: rgba(216, 216, 216, 0.54); /* Right side navigation unselected items color */
+}
+
+.md-nav__link:active, .md-nav__link--active {
+    color: #5a85fc !important; /* Navigation sidebar currently selected item */
+}
+
+.md-search__input ~ .md-search__icon, .md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Modifies the color of search in its default position (ie: not in use) */ 
+}
+
+.md-search-result {
+    color: rgb(255, 255, 255);
+    background-color: rgb(100, 100, 100);
+}
+    .md-search-result__meta {
+      background-color: rgb(100, 100, 100);
+      color: rgb(255, 255, 255);
+}
+
+.md-search-result__teaser {
+    color: rgba(255, 255, 255, 0.856); /* teaser text color for search results */
+}
+
+[data-md-toggle="search"]:checked ~ .md-header .md-search__input {
+    background-color: #3f3f3f; /* Active search bar background color */
+    color: rgb(255, 255, 255); /* Active search bar font color */
+}
+
+[data-md-toggle="search"]:checked ~ .md-header .md-search__input + .md-search__icon, [data-md-toggle="search"]:checked ~ .md-header .md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.54); /* "Search" text color when search bar is active */
+}
+
+.md-sidebar__inner {
+    border-right: .1rem solid #5a85fc54; /* line color next to navigation menus */
+}
+
+.text_404 h1 {
+    color:rgb(211, 211, 211); /* Font color for the header of 404 page */
+}
+
+.md-nav--secondary {
+    -webkit-transition: border-left .25s;
+    transition: border-left .25s;
+    border-left: .4rem solid #5a85fc54; /* Line color to the left side of navigation menu */
+}
+
+[data-md-color-primary="yellow"] .md-header {
+    background-color: rgba(10, 10, 10, 0.95); /* Header background color */
+}
+
+[data-md-color-accent="yellow"] .md-typeset a {
+    color: #5a85fc; 
+}
+  [data-md-color-accent="yellow"] .md-typeset a:hover,
+  [data-md-color-accent="yellow"] .md-typeset a:active {
+    color: #89a8ffbe; 
+}
+
+[data-md-color-accent="yellow"] .md-typeset [id]:hover .headerlink:hover,
+[data-md-color-accent="yellow"] .md-typeset [id]:target .headerlink,
+[data-md-color-accent="yellow"] .md-typeset [id] .headerlink:focus {
+  color: #89a8ffbe; 
+}
+
+[data-md-color-accent="yellow"] .md-nav__link:focus,
+[data-md-color-accent="yellow"] .md-nav__link:hover {
+  color: #89a8ffbe; 
+}
+
+[data-md-color-primary="yellow"] .md-tabs {
+    background-color: rgba(10, 10, 10, 0.95); /* Tabs menu background color (this is the menu below header) */
+}
+
+/* Start of Admonition blocks */
+
+.md-typeset .admonition.summary > .admonition-title, .md-typeset details.summary > .admonition-title, .md-typeset .admonition.tldr > .admonition-title, .md-typeset details.tldr > .admonition-title, .md-typeset .admonition.summary > summary, .md-typeset details.summary > summary, .md-typeset .admonition.tldr > summary, .md-typeset details.tldr > summary, .md-typeset .admonition.abstract > .admonition-title, .md-typeset details.abstract > .admonition-title, .md-typeset .admonition.abstract > summary, .md-typeset details.abstract > summary {
+    background-color: rgba(0, 176, 255, 0.5); 
+}
+
+.md-typeset .admonition.todo > .admonition-title, .md-typeset details.todo > .admonition-title, .md-typeset .admonition.todo > summary, .md-typeset details.todo > summary, .md-typeset .admonition.info > .admonition-title, .md-typeset details.info > .admonition-title, .md-typeset .admonition.info > summary, .md-typeset details.info > summary {
+    background-color: rgba(0, 184, 212, 0.5); 
+}
+
+.md-typeset .admonition.hint > .admonition-title, .md-typeset details.hint > .admonition-title, .md-typeset .admonition.important > .admonition-title, .md-typeset details.important > .admonition-title, .md-typeset .admonition.hint > summary, .md-typeset details.hint > summary, .md-typeset .admonition.important > summary, .md-typeset details.important > summary, .md-typeset .admonition.tip > .admonition-title, .md-typeset details.tip > .admonition-title, .md-typeset .admonition.tip > summary, .md-typeset details.tip > summary {
+    background-color: rgba(0, 191, 165, 0.5); 
+}
+
+.md-typeset .admonition.check > .admonition-title, .md-typeset details.check > .admonition-title, .md-typeset .admonition.done > .admonition-title, .md-typeset details.done > .admonition-title, .md-typeset .admonition.check > summary, .md-typeset details.check > summary, .md-typeset .admonition.done > summary, .md-typeset details.done > summary, .md-typeset .admonition.success > .admonition-title, .md-typeset details.success > .admonition-title, .md-typeset .admonition.success > summary, .md-typeset details.success > summary {
+    background-color: rgba(0, 200, 83, 0.5); 
+}
+
+.md-typeset .admonition.help > .admonition-title, .md-typeset details.help > .admonition-title, .md-typeset .admonition.faq > .admonition-title, .md-typeset details.faq > .admonition-title, .md-typeset .admonition.help > summary, .md-typeset details.help > summary, .md-typeset .admonition.faq > summary, .md-typeset details.faq > summary, .md-typeset .admonition.question > .admonition-title, .md-typeset details.question > .admonition-title, .md-typeset .admonition.question > summary, .md-typeset details.question > summary {
+    background-color: rgba(100, 221, 23, 0.5); 
+}
+
+.md-typeset .admonition.caution > .admonition-title, .md-typeset details.caution > .admonition-title, .md-typeset .admonition.attention > .admonition-title, .md-typeset details.attention > .admonition-title, .md-typeset .admonition.caution > summary, .md-typeset details.caution > summary, .md-typeset .admonition.attention > summary, .md-typeset details.attention > summary, .md-typeset .admonition.warning > .admonition-title, .md-typeset details.warning > .admonition-title, .md-typeset .admonition.warning > summary, .md-typeset details.warning > summary {
+    background-color: rgba(255, 145, 0, 0.5); 
+}
+
+.md-typeset .admonition.fail > .admonition-title, .md-typeset details.fail > .admonition-title, .md-typeset .admonition.missing > .admonition-title, .md-typeset details.missing > .admonition-title, .md-typeset .admonition.fail > summary, .md-typeset details.fail > summary, .md-typeset .admonition.missing > summary, .md-typeset details.missing > summary, .md-typeset .admonition.failure > .admonition-title, .md-typeset details.failure > .admonition-title, .md-typeset .admonition.failure > summary, .md-typeset details.failure > summary {
+    background-color: rgba(255, 82, 82, 0.5); 
+}
+
+.md-typeset .admonition.error > .admonition-title, .md-typeset details.error > .admonition-title, .md-typeset .admonition.error > summary, .md-typeset details.error > summary, .md-typeset .admonition.danger > .admonition-title, .md-typeset details.danger > .admonition-title, .md-typeset .admonition.danger > summary, .md-typeset details.danger > summary {
+    background-color: rgba(255, 23, 68, 0.5); 
+}
+
+.md-typeset .admonition.bug > .admonition-title, .md-typeset details.bug > .admonition-title, .md-typeset .admonition.bug > summary, .md-typeset details.bug > summary {
+    background-color: rgba(245, 0, 86, 0.5); 
+}
+
+.md-typeset .admonition.example > .admonition-title, .md-typeset details.example > .admonition-title, .md-typeset .admonition.example > summary, .md-typeset details.example > summary {
+    background-color: rgba(102, 31, 255, 0.5); 
+}
+
+.md-typeset .admonition.cite > .admonition-title, .md-typeset details.cite > .admonition-title, .md-typeset .admonition.cite > summary, .md-typeset details.cite > summary, .md-typeset .admonition.quote > .admonition-title, .md-typeset details.quote > .admonition-title, .md-typeset .admonition.quote > summary, .md-typeset details.quote > summary {
+    background-color: rgba(158, 158, 158, 0.5); 
+}
+
+/* Admonition ends with above ^ */
+
+/* Code hilite "dark" theme starts here, still needs improvements */
+
+.codehilite .o, .md-typeset .highlight .o {
+    color: #d0d0d0;
+}
+
+.codehilite .ow, .md-typeset .highlight .ow {
+    color: #6ab825; font-weight: bold; 
+}
+
+.codehilite .ge, .md-typeset .highlight .ge {
+    color: #d0d0d0; font-style: italic; 
+}
+
+.codehilite .gr, .md-typeset .highlight .gr {
+    color: #d22323; 
+}
+
+.codehilite .gh, .md-typeset .highlight .gh {
+    color: #ffffff; font-weight: bold; 
+}
+
+.codehilite .go, .md-typeset .highlight .go {
+    color: #cccccc; 
+}
+
+.codehilite .gp, .md-typeset .highlight .gp {
+    color: #aaaaaa; 
+}
+
+.codehilite .gs, .md-typeset .highlight .gs {
+    color: #d0d0d0; font-weight: bold; 
+}
+
+.codehilite .gu, .md-typeset .highlight .gu {
+    color: #ffffff; text-decoration: underline; 
+}
+
+.codehilite .gt, .md-typeset .highlight .gt {
+    color: #d22323; 
+}
+
+.codehilite .k, .md-typeset .highlight .k {
+    color: #6ab825; font-weight: bold; 
+}
+
+.codehilite .kc, .md-typeset .highlight .kc {
+    color: #6ab825; font-weight: bold; 
+}
+
+.codehilite .kd, .md-typeset .highlight .kd {
+    color: #6ab825; font-weight: bold; 
+}
+
+.codehilite .kn, .md-typeset .highlight .kn {
+    color: #6ab825; font-weight: bold; 
+}
+
+.codehilite .kp, .md-typeset .highlight .kp {
+    color: #6ab825; 
+}
+
+.codehilite .kr, .md-typeset .highlight .kr {
+    color: #6ab825; font-weight: bold; 
+}
+
+.codehilite .kt, .md-typeset .highlight .kt {
+    color: #6ab825; font-weight: bold; 
+}
+
+.codehilite .c, .md-typeset .highlight .c {
+    color: #999999; font-style: italic; 
+}
+
+.codehilite .cm, .md-typeset .highlight .cm {
+    color: #999999; font-style: italic; 
+}
+
+.codehilite .cp, .md-typeset .highlight .cp {
+    color: #cd2828; font-weight: bold;
+}
+
+.codehilite .c1, .md-typeset .highlight .c1 {
+    color: #999999; font-style: italic; 
+}
+
+.codehilite .ch, .md-typeset .highlight .ch {
+    color: #999999; font-style: italic; 
+}
+
+.codehilite .cs, .md-typeset .highlight .cs {
+    color: #e50808; font-weight: bold; background-color: #520000; 
+}
+
+.codehilite .na, .md-typeset .highlight .na {
+    color: #bbbbbb; 
+}
+
+.codehilite .nb, .md-typeset .highlight .nb {
+    color: #24909d; 
+}
+
+.codehilite .bp, .md-typeset .highlight .bp {
+    color: #24909d; 
+}
+
+.codehilite .nc, .md-typeset .highlight .nc {
+    color: #447fcf; text-decoration: underline; 
+}
+
+.codehilite .no, .md-typeset .highlight .no {
+    color: #40ffff; 
+}
+  
+.codehilite .nd, .md-typeset .highlight .nd {
+    color: #ffa500; 
+}
+
+.codehilite .ni, .md-typeset .highlight .ni {
+    color: #d0d0d0; 
+}
+
+.codehilite .ne, .md-typeset .highlight .ne {
+    color: #bbbbbb; 
+}
+
+.codehilite .nf, .md-typeset .highlight .nf {
+    color: #447fcf; 
+}
+
+.codehilite .nl, .md-typeset .highlight .nl {
+    color: #d0d0d0; 
+}
+
+.codehilite .nn, .md-typeset .highlight .nn {
+    color: #447fcf; text-decoration: underline; 
+}
+  
+.codehilite .nt, .md-typeset .highlight .nt {
+    color: #6ab825; font-weight: bold; 
+}
+
+.codehilite .nv, .md-typeset .highlight .nv {
+    color: #40ffff; 
+}
+
+.codehilite .vc, .md-typeset .highlight .vc {
+    color: #40ffff; 
+}
+
+.codehilite .vg, .md-typeset .highlight .vg {
+    color: #40ffff; 
+}
+
+.codehilite .vi, .md-typeset .highlight .vi {
+    color: #40ffff; 
+}
+
+.codehilite .nx, .md-typeset .highlight .nx {
+    color: #d0d0d0; 
+}
+
+.codehilite .m, .md-typeset .highlight .m {
+    color: #3677a9; 
+}
+
+.codehilite .mf, .md-typeset .highlight .mf {
+    color: #3677a9; 
+}
+
+.codehilite .mh, .md-typeset .highlight .mh {
+    color: #3677a9; 
+}
+
+.codehilite .mi, .md-typeset .highlight .mi {
+    color: #3677a9; 
+}
+
+.codehilite .il, .md-typeset .highlight .il {
+    color: #3677a9; 
+}
+
+.codehilite .mo, .md-typeset .highlight .mo {
+    color: #3677a9; 
+}
+
+.codehilite .s, .md-typeset .highlight .s {
+    color: #ed9d13; 
+}
+
+.codehilite .sb, .md-typeset .highlight .sb {
+    color: #ed9d13; 
+}
+
+.codehilite .sc, .md-typeset .highlight .sc {
+    color: #ed9d13; 
+}
+
+.codehilite .sd, .md-typeset .highlight .sd {
+    color: #ed9d13; 
+}
+
+.codehilite .s2, .md-typeset .highlight .s2 {
+    color: #ed9d13; 
+}
+
+.codehilite .se, .md-typeset .highlight .se {
+    color: #ed9d13; 
+}
+
+.codehilite .sh, .md-typeset .highlight .sh {
+    color: #ed9d13; 
+}
+
+.codehilite .si, .md-typeset .highlight .si {
+    color: #ed9d13; 
+}
+
+.codehilite .sx, .md-typeset .highlight .sx {
+    color: #ffa500; 
+}
+
+.codehilite .sr, .md-typeset .highlight .sr {
+    color: #ed9d13; 
+}
+
+.codehilite .s1, .md-typeset .highlight .s1 {
+    color: #ed9d13; 
+}
+
+.codehilite .ss, .md-typeset .highlight .ss {
+    color: #ed9d13; 
+}
+
+.codehilite .err, .md-typeset .highlight .err {
+    color: #a61717; background-color: #e3d2d2; 
+}
+
+.codehilite .w, .md-typeset .highlight .w {
+    color: #666666; 
+}
+
+.codehilite .hll, .md-typeset .highlight .hll {
+    background-color: #404040; 
+}
+
+.md-typeset .codehilite pre, .md-typeset .highlight pre,
+.md-typeset .codehilite code,
+.md-typeset .highlight code {
+  display: block;
+  margin: 0;
+  padding: 1.05rem 1.2rem;
+  background-color: #404040;
+  color: whitesmoke;
+}
+
+/* Code hilite ends with above line ^ */

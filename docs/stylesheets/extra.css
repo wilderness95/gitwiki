@@ -1,0 +1,71 @@
+/* Normal text formatting: justified */
+p {
+    text-align: justify !important;
+}
+img[alt="The eagle has been landed!"] { width: 100%; }
+
+/* This is for links, now set to underlined by default */
+.md-typeset a {
+	text-decoration: underline;
+}
+
+/*This section controlls the site widht.*/
+.md-sidebar--secondary {
+	margin-left: 100%; /*This value controls the ToC sidebar margin*/
+}
+.md-grid {
+	max-width: 100%;
+}
+
+/*this section controls the font size of the ToC links
+Until the main page width control is found it is disabled, do not delete pls
+
+.md-nav--secondary a { 
+	font-size: 70%;
+*/
+
+/*This section controlls the position of the theme switcher button.*/
+#switcher {
+	position: fixed;
+	top: 1%; /*These are the margins, which controlls the distance from border */
+	right: 1%;
+	z-index: 99; /*Controls the position on the Z axis, currently assigned to the top layer*/
+}
+
+/*This section gives extra border for the light themed tables*/
+.md-typeset table:not([class]) th { /*This is for the table headers*/
+	border: 0.1rem solid rgba(110, 110, 110, 0.52);
+}
+
+.md-typeset table:not([class]) td { /*This is for the table body*/
+	border: 0.1rem solid rgba(179, 179, 179, 0.52);
+}
+
+/*Custom colors */
+red { /*This is for the custom text coloring*/
+	color: red;
+	font-weight: bold;
+}
+green { /*This is for the custom text coloring*/
+	color: green;
+}
+
+blue { /*This is for the custom text coloring*/
+	color: blue;
+}
+
+yellow { /*This is for the custom text coloring*/
+	color: orange;
+}
+
+orange { /*This is for the custom text coloring*/
+	color: rgb(255, 69, 44);
+}
+
+cian { /*This is for the custom text coloring*/
+	color: rgb(0, 217, 255);
+}
+
+magenta { /*This is for the custom text coloring*/
+	color: magenta;
+}

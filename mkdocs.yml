@@ -1,0 +1,33 @@
+site_name: GIT Wiki
+#site_url: ''
+#site_dir: ''
+use_directory_urls: true
+repo_name: 'fdsfds'
+repo_url: 'https://github.com/wilderness95/gitwiki'
+theme:
+    name: 'material'
+    favicon: 'assets/images/favicon.ico'
+    logo: 'images/eagle_sot.png'
+    custom_dir: 'theme'
+    feature:
+        tabs: true
+markdown_extensions:
+    - admonition
+    - pymdownx.caret
+    - codehilite
+    - toc:
+        permalink: true
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.tabbed
+extra_css:
+    - 'stylesheets/extra.css'
+    - 'stylesheets/lightbox.css'
+    - 'stylesheets/tabbed.css'
+extra_javascript:
+    - 'js/lightbox.js'
+    - 'js/toTop.js'
